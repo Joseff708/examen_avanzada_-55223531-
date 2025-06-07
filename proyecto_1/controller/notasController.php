@@ -1,6 +1,10 @@
 <?php
-use model\Notas;
 namespace controller;
+include "../model/conexDB.php";
+include "../model/notas.php";
+use model\ConexDB;
+use model\Notas;
+
 class NotasController {
     private $notas;
 

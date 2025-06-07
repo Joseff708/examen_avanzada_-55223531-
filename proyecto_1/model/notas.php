@@ -9,11 +9,11 @@ class Notas {
     protected $nota;
 
     function getAll(){
-        $conexDB = new conexDB();
+        $conexDB = new ConexDB();
         $sql='SELECT * FROM `notas`';
         $notas =[];
-        $result = $conexDB->consulta();
-    $result->query($sql);
+        $result = $conexDB->consulta($sql);
+    
     if ($result) {
         while ($row = $result->fetch_assoc()) {
             $nota = new Notas();
@@ -25,6 +25,9 @@ class Notas {
 
         }
     }
+        $conexDB->close();
+    
+        
     return $notas;
     }
  }
