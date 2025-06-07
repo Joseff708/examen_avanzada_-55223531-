@@ -31,7 +31,7 @@
     </div>
     <button type="submit">registrar</button>
 <br>
-<h1>
+<h1>lista de notas</h1>
     <table>
         <thead>
             <tr>
@@ -55,6 +55,6 @@
             ?>
         </tbody>
     </table>
-</h1>
+
 </body>
 </html>
